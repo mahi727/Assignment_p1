@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Afrina's Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html, p {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg {
+  background-image: url('img/bg.jpeg');
+  min-height: 80%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg{
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <!-- Part 2 of the Assignment 1 is linked here in navigation sention. Also created another one at bottom -->
+    <a href="Part2/index.html" class="w3-bar-item w3-button">CS Department</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Text -->
+<div class="bgimg w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AFRINA'S HOMEPAGE</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <!-- brief description of myself -->
+  <p style="text-align: justify;">Hello, I am Afrina Sharmin, a passionate software engineer currently pursuing my Master’s degree in Software Engineering at George Mason University. With a Bachelor’s degree in Software Engineering from the University of Dhaka, I have over three years of experience teaching as a Senior Instructor. I have also developed my abilities in web development, database management, and programming. 
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Afrina Sharmin</b></p><br>
+      <img src="img/pp.jpeg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+    	<p style="text-align: justify;">   </br> Throughout my professional journey, I have worked on diverse projects, from developing web applications for government initiatives to guiding students in their academic and professional growth. I’ve always enjoyed combining my technical expertise with a strong desire to contribute to impactful projects and solutions. </br>
+  		As the President of the Bangladeshi Graduate Students Association at GMU, I take pride in fostering a sense of community among graduate students. I focus on creating events and activities that help students connect, collaborate, and find resources for their academic and personal growth.</br>
+  		On a personal level, I am always eager to explore new technologies and challenges, as well as share my experiences to inspire and support others in their educational and career journeys. When I am not busy with work or studies, you will find me indulging in one of my favorite hobbies—baking. I love creating beautiful and delicious cakes, and I am thrilled to share my passion through my online cake shop. </br></p>
+    </div>
+  </div> 
+
+  <!-- Assignment 1 part 2 is linked here in this class web page. Also created a another one at top on navigation bar-->
+  <p style="text-align:center;">Link to <a href="Part2/index.html">Part 2 of the Assignment </a></p> 
+  
+</div> 
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
+  <p>Powered by <a href="index.html" title="W3.CSS" target="_blank" class="w3-hover-text-green">Afrina Sharmin</a></p>
+</footer>
+ 
+ <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

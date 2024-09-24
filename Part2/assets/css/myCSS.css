@@ -1,0 +1,116 @@
+/*My own css over the bootstrap template*/
+
+/*body {
+  background-color: #d7d7d79e !important; 
+
+}*/
+
+.department-title {
+  border: 5px solid #006633;
+  box-shadow: 0 .125rem 1rem rgb(0, 102, 51);
+  padding: 10px;
+  color: #006633;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.degrees ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: #FFCC33;
+}
+
+.degrees ul {
+  list-style: none;
+}
+
+table {
+  border: 5px solid;
+  border-collapse: collapse;
+}
+
+.programs td{
+  vertical-align: middle;
+}
+
+.footer-newsletter {
+  text-align: right;
+  padding-right: 5%;
+}
+
+.survey {
+  border: 5px solid #006633;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0px;
+}
+
+.survey-title {
+  background-color: #006633;
+  border: 5px solid #006633;
+  padding: 10px;
+  color: #fff;
+}
+
+.survey-title h3{
+  color: #fff;
+  font-weight: bold;
+}
+
+.survey-form {
+  padding: 20px;
+}
+
+.link-to_survey-page p{
+  color: var(--default-color);
+  font-family: var(--default-font);
+  font-size: var(--default-size);
+  text-transform: none;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #c26d55;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
